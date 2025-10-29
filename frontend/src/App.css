@@ -1,0 +1,257 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a, .navbar button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.navbar a:hover, .navbar button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar button {
+  background: #f97316;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== AUTH PAGES ===== */
+.auth-page {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.auth-page h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.auth-page input, .auth-page textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin: 0.7rem 0;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.auth-page input:focus, .auth-page textarea:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.auth-page button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-page button:hover {
+  background: #1e3a8a;
+}
+
+.auth-page .google-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: #444;
+  border: 1.5px solid #e2e8f0;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.auth-page .google-btn:hover {
+  background: #f8f9fa;
+}
+
+.error {
+  color: #ef4444;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+/* ===== DASHBOARD & PRODUCTS ===== */
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card .info {
+  padding: 1rem;
+}
+
+.product-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.product-card p {
+  margin: 0.3rem 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.product-card .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin: 0.5rem 0;
+}
+
+.product-card .actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.product-card button {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.product-card button.edit {
+  background: #fbbf24;
+  color: white;
+}
+
+.product-card button.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.product-card button:hover {
+  opacity: 0.9;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background: #1e40af;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1e3a8a;
+}
+
+/* ===== LOADING ===== */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+/* ===== SUCCESS PAGE ===== */
+.success-page {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.success-page h1 {
+  color: #10b981;
+  font-size: 2.5rem;
+}
+
+.success-page p {
+  margin: 1rem 0;
+  color: #64748b;
+}

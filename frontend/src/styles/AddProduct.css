@@ -1,0 +1,26 @@
+/* .add-page { max-width: 500px; margin: 2rem auto; padding: 1rem; }
+.add-page input,
+.add-page textarea {
+  width: 100%;
+  margin-bottom: .8rem;
+  padding: .6rem;
+  font-size: 1rem;
+}
+.add-page button {
+  padding: .6rem 1.2rem;
+  background: #2c7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-page button:hover { background: #257; } */
+
+
+/* frontend/src/pages/AddProduct.css */
+.add-page { max-width: 500px; margin: 2rem auto; padding: 1rem; }
+.add-page input,
+.add-page textarea { width: 100%; margin-bottom: .8rem; padding: .6rem; }
+.add-page button {
+  padding: .6rem 1.2rem; background:#2c7; color:white; border:none; cursor:pointer;
+}
+.msg { color:green; font-weight:bold; margin-bottom:1rem; }
